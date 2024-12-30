@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background: #ecf0f1;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  overflow: hidden;
+}
+
+.display {
+  background: #34495e;
+  padding: 20px;
+  text-align: right;
+  border-radius: 20px 20px 0 0;
+}
+
+.screen {
+  font-size: 2.5rem;
+  color: #fff;
+  background: none;
+  border: none;
+  width: 100%;
+  outline: none;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.btn {
+  background: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background: #3498db;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn:nth-child(4n) {
+  background: #2c3e50;
+  color: #fff;
+}
+
+.btn:nth-child(4n):hover {
+  background: #2980b9;
+}

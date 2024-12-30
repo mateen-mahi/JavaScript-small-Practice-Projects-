@@ -1,0 +1,160 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+
+
+.lines {
+  width: 100%;
+  height: 4px;
+  background-color: rgb(184, 233, 6);
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+
+.cross .lines:nth-child(1) {
+  transform: translateY(15px) rotate(46deg);
+}
+
+.cross .lines:nth-child(2) {
+  opacity: 0;
+}
+
+.cross .lines:nth-child(3) {
+  transform: translateY(-15px) rotate(-46deg);
+}
+
+
+.hide-nav{
+    transform: translateY(-800px);
+
+}
+
+.show-nav{
+    transform: translateY(0);
+
+}
+
+
+nav{
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    height: 80vh;
+    width: 400px;
+    background: #000;
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    transition: .5s;
+    
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 800;
+
+}
+
+.hamburger{
+    display: none;
+}
+
+
+
+
+
+@media screen and (
+    max-width: 800px) {
+    
+        .hamburger {
+            width: 50px;
+            height: 40px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          cursor: pointer;
+          position: absolute;
+          right: 0px;
+          top: 5px;
+          z-index:3;
+        }
+    
+}
+
+
+.sideScroolbar{
+  width:30%;
+  text-align: justify;
+  border: 2px solid #999;
+  border-radius: 10px;
+  padding: 20px;
+  height: 100vh;
+  position: sticky;
+  top: 10px;
+  
+}
+
+.sideHeader ,.sideFooter{
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background:pink;
+
+
+/* background-color:linear-gradient(top,yellow,blue); */
+}
+
+.sideContent{
+  padding: 20px 10px;
+  height:85% ;
+  overflow-y: scroll;
+  margin:10px auto;
+}
+.sideContent::-webkit-scrollbar{
+  width: 10px;
+}
+.sideContent::-webkit-scrollbar-thumb{
+  background: #000;
+  border-radius: 4px;
+}
+
+.sideContent::-webkit-scrollbar-track{
+  background:cyan;
+  border: 2px solid rgb(10, 10, 10);
+  border-radius: 4px;
+}
+
+
+.bodyContainer{
+  width: 40%;
+  padding: 50px 20px;
+  margin: auto;
+
+}
+
+.wraper{
+  display: flex;
+  gap: 10px;
+}
+
+

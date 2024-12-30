@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: radial-gradient(circle, #3a1c71, #d76d77, #ffaf7b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+input {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border-radius: 12px;
+    border: 2px solid #ffaf7b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), inset 0 2px 5px rgba(255, 255, 255, 0.2);
+    color: #3a1c71;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    width: 380px;
+}
+
+input::placeholder {
+    color: #9c9c9c;
+}
+
+input:focus {
+    outline: 2px solid #d76d77;
+    box-shadow: 0 0 8px #ffaf7b;
+}
+
+.card {
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 2.5rem;
+    max-width: 850px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.avatar {
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    height: 160px;
+    width: 160px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.user-info {
+    color: #333;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.user-info h2 {
+    margin-top: 0;
+    color: #3a1c71;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.user-info ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    margin-top: 1rem;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+.user-info ul li {
+    /* background: #ffaf7b;
+    color: white; */
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+}
+
+.user-info ul li strong {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.repo {
+    /* background: linear-gradient(145deg, #ffaf7b, #d76d77); */
+    border-radius: 5px;
+    color: black;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.7rem;
+    margin: 0.3rem 0.5rem 0 0;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.repo:hover {
+    background-color: #3a1c71;
+    color: #ffffff;
+}

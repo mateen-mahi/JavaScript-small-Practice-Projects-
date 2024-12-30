@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+    cursor: none;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    font-size: 4vw;
+    font-family:sans-serif;
+
+}
+
+.cursor{
+    width: 30px;
+    height: 30px;
+    background-image: url(./cursor.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: fixed;
+    pointer-events: none;
+    mix-blend-mode:difference;
+    transform: translate(-50%, -50%);
+}
